@@ -10,7 +10,7 @@ const [file, setFile] = useState()
 const [data, setData] = useState([])
 
 useEffect(()=>{
-  Axios.get('https://heroku-nodejs-react1.herokuapp.com/api/get').then((response)=>{
+  Axios.get('api/get').then((response)=>{
     
     setKeyList(response.data)
     //console.log(response.data)
