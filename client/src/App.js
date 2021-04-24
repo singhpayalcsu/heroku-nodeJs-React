@@ -10,7 +10,7 @@ const [file, setFile] = useState()
 const [data, setData] = useState([])
 
 useEffect(()=>{
-  Axios.get('http://localhost:3001/api/get').then((response)=>{
+  Axios.get('http://localhost:5000/api/get').then((response)=>{
     
     setKeyList(response.data)
     //console.log(response.data)

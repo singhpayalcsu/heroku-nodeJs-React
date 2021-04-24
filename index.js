@@ -7,6 +7,7 @@ const bodyParser = require('body-parser')
 var multer  = require('multer')
 var upload = multer({ dest: 'uploads/' })
 
+const PORT = process.env.PORT || 5000
 //app.listen(process.env.PORT || 5000);
 
 //require('dotenv').config()
@@ -112,6 +113,6 @@ app.get("/api/view/:Key", (req,res)=>{
 
 */
 
-app.listen(3001,()=>{
-    console.log("running on port 3001")
+app.listen(PORT,()=>{
+    console.log("running on port 5000")
 });
