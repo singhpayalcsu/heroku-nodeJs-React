@@ -32,3 +32,12 @@ heroku login
 heroku create heroku-nodejs-react1
 git commit -am "Added heroku postbuild scripts"
 git push heroku main
+
+AWS S3 bucket config
+heroku config:set AWS_ACCESS_KEY_ID=xxx AWS_SECRET_ACCESS_KEY=yyy
+heroku config:set S3_BUCKET=zzz
+
+check config - heroku config
+
+use in code
+const S3_BUCKET = process.env.S3_BUCKET;
